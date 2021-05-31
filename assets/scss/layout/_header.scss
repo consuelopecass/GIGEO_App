@@ -1,0 +1,52 @@
+.header {
+    &__banner {
+        background-image: url('../img/image-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 110px;
+        /*Tamaño laptop*/
+        @include respond-to($min-laptop) {
+            height: 250px;
+        }
+    }
+    &__profile {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        padding: 0 40px;
+    }
+    &__info {
+        display: flex;
+        flex-grow: 1;
+    }
+    &__avatar {
+        background-image: url('../img/profile-image.png');
+        background-size: cover;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+    &__details {
+        display: flex;
+        flex-direction: column;
+        height: 90px;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 15px;
+    }
+    &__name {
+        font-weight: bold;
+        font-size: $font-size-xx-large;
+    }
+    &__followers {
+        color: $gray;
+    }
+    &__actions {
+        display: none;
+        @include respond-to ($min-laptop) {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

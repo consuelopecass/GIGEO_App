@@ -1,0 +1,23 @@
+.main {
+    &__title {
+        justify-content: flex-start;
+        h2 {
+            font-size: $font-size-xx-large;
+            font-family: $secondary-font;
+            font-weight: bold;
+            margin: 30px 10px;
+        }
+    }
+    &__preview {
+        margin-bottom: 10px;
+    }
+    &__name {
+        font-size: $font-size-x-large;
+        font-family: $primary-font;
+        font-weight: $primary-font-bold;
+        margin-bottom: 10px;
+    }
+    &__view {
+        color: $gray;
+    }
+}
