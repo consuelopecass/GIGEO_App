@@ -1,0 +1,99 @@
+    .navbar {
+        height: 6.25rem;
+        background-color: $white;
+        justify-content: space-between;
+        &__name {
+            color: $swamp!important;
+            font-family: $secondary-font;
+            font-weight: bold;
+            font-size: $font-size-xxx-large;
+            padding-left: 1.25rem;
+            span {
+                font-size: $font-size-small;
+                font-weight: 400;
+                position: absolute;
+            }
+            @include respond-to($min-laptop) {
+                padding-left: 4.375rem;
+            }
+        }
+        &__menu {
+            display: none;
+            @include respond-to($min-laptop) {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        &__menuLista {
+            flex-direction: row;
+        }
+        &__menuLista:last-child {
+            margin-right: 3rem;
+        }
+        &__link {
+            margin-left: 2rem;
+            font-size: 1.25rem;
+        }
+        &__menuBurger {
+            padding: 1.25rem 1.25rem;
+            @include respond-to($min-laptop) {
+                display: none;
+            }
+        }
+        &__input {
+            display: none;
+            z-index: 2;
+            position: absolute;
+            top: 0.625rem;
+            right: 1rem;
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+        &__burger {
+            background-color: $gray;
+            display: block;
+            width: 1.75rem;
+            height: 0.25rem;
+            position: relative;
+            z-index: 1;
+            -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+            transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+        }
+        .burger1 {
+            color: $gray!important;
+            -webkit-transform-origin: 10% 0%;
+            transform-origin: 10% 0%;
+            margin-bottom: 0.3125rem;
+        }
+        .burger2 {
+            color: $gray!important;
+            margin-bottom: 0.3125rem;
+        }
+        .burger3 {
+            color: $gray!important;
+            -webkit-transform-origin: 10% 100%;
+            transform-origin: 10% 100%;
+        }
+        &__input:checked~ul {
+            width: 100%;
+            -webkit-transition: width 0.3s ease-out;
+            transition: width 0.3s ease-out;
+        }
+        &__input:checked~label .burger1 {
+            opacity: 1;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            background-color: #000000;
+        }
+        &__input:checked~label .burger2 {
+            opacity: 0;
+        }
+        &__input:checked~label .burger3 {
+            opacity: 1;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            background-color: #000000;
+        }
+    }

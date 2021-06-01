@@ -1,6 +1,8 @@
 .button {
     border: 0;
     color: $white;
+    font-family: $secondary-font;
+    font-weight: $secondary-font-light;
     font-size: $font-size-medium;
     margin-left: 10px;
     padding: 0 15px;
@@ -11,5 +13,11 @@
     }
     &--blue {
         background-color: $sky-blue;
+    }
+    /*Tamaño laptop*/
+    @include respond-to($min-laptop) {
+        &--red {
+            margin-right: 30px;
+        }
     }
 }

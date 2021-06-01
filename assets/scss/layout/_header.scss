@@ -5,6 +5,7 @@
         background-size: cover;
         background-position: center;
         height: 110px;
+        margin-bottom: 20px;
         /*Tamaño laptop*/
         @include respond-to($min-laptop) {
             height: 250px;
@@ -19,6 +20,9 @@
     &__info {
         display: flex;
         flex-grow: 1;
+        @include respond-to($min-laptop) {
+            padding-left: 40px;
+        }
     }
     &__avatar {
         background-image: url('../img/profile-image.png');
@@ -36,11 +40,13 @@
         margin-left: 15px;
     }
     &__name {
-        font-weight: bold;
+        font-family: $primary-font;
+        font-weight: $primary-font-maxbold;
         font-size: $font-size-xx-large;
     }
     &__followers {
         color: $gray;
+        font-family: $secondary-font;
     }
     &__actions {
         display: none;

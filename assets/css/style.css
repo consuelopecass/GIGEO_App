@@ -2,7 +2,7 @@
 /*
 Link Google Fonts
 */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Spartan:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Spartan:wght@200;300;400&display=swap");
 /*
 colors
 */
@@ -9956,16 +9956,130 @@ fonts size
 .button {
   border: 0;
   color: #FFF;
+  font-family: "Spartan", sans-serif;
+  font-weight: 300;
   font-size: 1rem;
   margin-left: 10px;
   padding: 0 15px;
   height: 40px;
+  /*Tamaño laptop*/
 }
 .button--red {
   background-color: #FF565B;
 }
 .button--blue {
   background-color: #79DEE7;
+}
+@media (min-width: 768px) {
+  .button--red {
+    margin-right: 30px;
+  }
+}
+
+.navbar {
+  height: 6.25rem;
+  background-color: #FFF;
+  justify-content: space-between;
+}
+.navbar__name {
+  color: #001614 !important;
+  font-family: "Spartan", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding-left: 1.25rem;
+}
+.navbar__name span {
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: absolute;
+}
+@media (min-width: 768px) {
+  .navbar__name {
+    padding-left: 4.375rem;
+  }
+}
+.navbar__menu {
+  display: none;
+}
+@media (min-width: 768px) {
+  .navbar__menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.navbar__menuLista {
+  flex-direction: row;
+}
+.navbar__menuLista:last-child {
+  margin-right: 3rem;
+}
+.navbar__link {
+  margin-left: 2rem;
+  font-size: 1.25rem;
+}
+.navbar__menuBurger {
+  padding: 1.25rem 1.25rem;
+}
+@media (min-width: 768px) {
+  .navbar__menuBurger {
+    display: none;
+  }
+}
+.navbar__input {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  top: 0.625rem;
+  right: 1rem;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.navbar__burger {
+  background-color: #888;
+  display: block;
+  width: 1.75rem;
+  height: 0.25rem;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+}
+.navbar .burger1 {
+  color: #888 !important;
+  -webkit-transform-origin: 10% 0%;
+  transform-origin: 10% 0%;
+  margin-bottom: 0.3125rem;
+}
+.navbar .burger2 {
+  color: #888 !important;
+  margin-bottom: 0.3125rem;
+}
+.navbar .burger3 {
+  color: #888 !important;
+  -webkit-transform-origin: 10% 100%;
+  transform-origin: 10% 100%;
+}
+.navbar__input:checked ~ ul {
+  width: 100%;
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+.navbar__input:checked ~ label .burger1 {
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #000000;
+}
+.navbar__input:checked ~ label .burger2 {
+  opacity: 0;
+}
+.navbar__input:checked ~ label .burger3 {
+  opacity: 1;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #000000;
 }
 
 .header__banner {
@@ -9974,6 +10088,7 @@ fonts size
   background-size: cover;
   background-position: center;
   height: 110px;
+  margin-bottom: 20px;
   /*Tamaño laptop*/
 }
 @media (min-width: 768px) {
@@ -9991,6 +10106,11 @@ fonts size
   display: flex;
   flex-grow: 1;
 }
+@media (min-width: 768px) {
+  .header__info {
+    padding-left: 40px;
+  }
+}
 .header__avatar {
   background-image: url("../img/profile-image.png");
   background-size: cover;
@@ -10007,11 +10127,13 @@ fonts size
   margin-left: 15px;
 }
 .header__name {
-  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
   font-size: 1.875rem;
 }
 .header__followers {
   color: #888;
+  font-family: "Spartan", sans-serif;
 }
 .header__actions {
   display: none;
@@ -10023,6 +10145,11 @@ fonts size
   }
 }
 
+@media (min-width: 768px) {
+  .main {
+    padding: 0 70px;
+  }
+}
 .main__title {
   justify-content: flex-start;
 }
@@ -10030,18 +10157,19 @@ fonts size
   font-size: 1.875rem;
   font-family: "Spartan", sans-serif;
   font-weight: bold;
-  margin: 30px 10px;
+  margin: 1.875rem 0.625rem;
 }
 .main__preview {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .main__name {
   font-size: 1.25rem;
   font-family: "Lato", sans-serif;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-weight: 900;
+  margin-bottom: 0.625rem;
 }
 .main__view {
+  font-family: "Spartan", sans-serif;
   color: #888;
 }
 
