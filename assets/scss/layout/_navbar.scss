@@ -14,7 +14,7 @@
                 position: absolute;
             }
             @include respond-to($min-laptop) {
-                padding-left: 4.375rem;
+                padding-left: 70px;
             }
         }
         &__menu {
@@ -32,10 +32,11 @@
         }
         &__link {
             margin-left: 2rem;
-            font-size: 1.25rem;
+            color: $swamp!important;
+            font-size: 20px;
         }
         &__menuBurger {
-            padding: 1.25rem 1.25rem;
+            padding: 20px 20px;
             @include respond-to($min-laptop) {
                 display: none;
             }
@@ -44,16 +45,16 @@
             display: none;
             z-index: 2;
             position: absolute;
-            top: 0.625rem;
-            right: 1rem;
+            top: 10px;
+            right: 16px;
             -webkit-transform: scale(1.5);
             transform: scale(1.5);
         }
         &__burger {
             background-color: $gray;
             display: block;
-            width: 1.75rem;
-            height: 0.25rem;
+            width: 32px;
+            height: 4px;
             position: relative;
             z-index: 1;
             -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
@@ -65,11 +66,11 @@
             color: $gray!important;
             -webkit-transform-origin: 10% 0%;
             transform-origin: 10% 0%;
-            margin-bottom: 0.3125rem;
+            margin-bottom: 5px;
         }
         .burger2 {
             color: $gray!important;
-            margin-bottom: 0.3125rem;
+            margin-bottom: 5px;
         }
         .burger3 {
             color: $gray!important;

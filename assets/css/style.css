@@ -9995,7 +9995,7 @@ fonts size
 }
 @media (min-width: 768px) {
   .navbar__name {
-    padding-left: 4.375rem;
+    padding-left: 70px;
   }
 }
 .navbar__menu {
@@ -10015,10 +10015,11 @@ fonts size
 }
 .navbar__link {
   margin-left: 2rem;
-  font-size: 1.25rem;
+  color: #001614 !important;
+  font-size: 20px;
 }
 .navbar__menuBurger {
-  padding: 1.25rem 1.25rem;
+  padding: 20px 20px;
 }
 @media (min-width: 768px) {
   .navbar__menuBurger {
@@ -10029,16 +10030,16 @@ fonts size
   display: none;
   z-index: 2;
   position: absolute;
-  top: 0.625rem;
-  right: 1rem;
+  top: 10px;
+  right: 16px;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
 .navbar__burger {
   background-color: #888;
   display: block;
-  width: 1.75rem;
-  height: 0.25rem;
+  width: 32px;
+  height: 4px;
   position: relative;
   z-index: 1;
   -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
@@ -10050,11 +10051,11 @@ fonts size
   color: #888 !important;
   -webkit-transform-origin: 10% 0%;
   transform-origin: 10% 0%;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 5px;
 }
 .navbar .burger2 {
   color: #888 !important;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 5px;
 }
 .navbar .burger3 {
   color: #888 !important;
