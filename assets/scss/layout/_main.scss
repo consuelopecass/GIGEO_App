@@ -1,7 +1,7 @@
 .main {
-    @include respond-to($min-laptop) {
-        padding: 0 70px;
-    }
+    // @include respond-to($min-laptop) {
+    //     padding: 0 70px;
+    // }
     &__title {
         justify-content: flex-start;
         h2 {

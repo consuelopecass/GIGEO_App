@@ -10146,11 +10146,6 @@ fonts size
   }
 }
 
-@media (min-width: 768px) {
-  .main {
-    padding: 0 70px;
-  }
-}
 .main__title {
   justify-content: flex-start;
 }
